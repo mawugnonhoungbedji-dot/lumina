@@ -1,0 +1,516 @@
+{
+    "nav": {
+        "services": "Services",
+        "projets": "Projects",
+        "studio": "Studio",
+        "insights": "Insights",
+        "contact": "Contact",
+        "cta": "Start a project",
+        "light": "Light mode",
+        "dark": "Dark mode",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu"
+    },
+    "hero": {
+        "eyebrow": "✦ Web agency · Cotonou & French-speaking world · 100% satisfaction",
+        "title": "Your website should be\nwinning you clients.",
+        "subtitle": "Lumina crafts bespoke websites that turn your visitors into clients. For entrepreneurs and French-speaking brands who refuse to look like everyone else.",
+        "cta_primary": "Start your project",
+        "cta_secondary": "Our work",
+        "stats": {
+            "satisfaction": "Satisfaction",
+            "delais": "On-time delivery",
+            "expertise": "Years of expertise",
+            "dispo": "Availability"
+        }
+    },
+    "logos": {
+        "label": "Trusted by clients — from Benin to the world"
+    },
+    "problem": {
+        "eyebrow": "The reality",
+        "title": "Your website exists. But is it\nactually earning you anything?",
+        "p1": "A website that doesn't convert is not an investment. It's an invisible cost that accumulates every month.",
+        "p2": "Whether you're in Cotonou, Dakar, Paris or Montreal, the reality is the same: too many businesses have a website that's live — but attracts no one, reassures no one, and sells nothing. Outdated design, slow load times, confusing user journeys: every second that passes, potential clients are choosing your competitors.",
+        "p3": "Your digital presence should be your best salesperson. Available 24/7, convincing at first glance, optimized to rank on Google — and effective with every visit. That's precisely why Lumina exists."
+    },
+    "approach": {
+        "eyebrow": "02 — Our approach",
+        "title": "Professional website creation,\nreimagined.",
+        "subtitle": "No templates. No generic solutions. Every Lumina project is built from scratch, for one precise goal: yours.",
+        "cards": [
+            {
+                "title": "Custom design, built for conversion",
+                "desc": "A bespoke website isn't a luxury — it's a competitive advantage. Every design element is crafted to guide your visitors toward action. We don't decorate. We build persuasion machines."
+            },
+            {
+                "title": "SEO-optimized from day one",
+                "desc": "A beautiful website invisible on Google is worthless. At Lumina, SEO optimization isn't an afterthought — it's a core pillar of the build. Your website is made to be found, from the start."
+            },
+            {
+                "title": "One dedicated point of contact",
+                "desc": "At Lumina, no disconnected project manager. You have one dedicated contact who understands your business, your market — whether you're in Cotonou or Lyon."
+            }
+        ]
+    },
+    "portfolio": {
+        "eyebrow": "03 — Work",
+        "title": "Websites that\nactually convert.",
+        "cta": "View all projects",
+        "cta_similar": "Do you have a similar project?",
+        "modal": {
+            "eyebrow": "Case Study",
+            "challenge": "The Challenge",
+            "result_label": "Key Result",
+            "result_sub": "Measured over the first 6 months post-launch.",
+            "cta": "Discuss my project",
+            "close": "Close",
+            "scroll_play": "Play",
+            "scroll_pause": "Pause",
+            "scroll_top": "Back to top",
+            "scroll_bottom": "Scroll to bottom",
+            "read_more": "Read full story"
+        },
+        "projects": [
+            {
+                "title": "GLOT PRO",
+                "slug": "glot-pro",
+                "sector": "Cleaning & Concierge · Cahors",
+                "result": "Lighthouse Score 96 · 72h Sprint",
+                "img": "/images/glot-pro.webp",
+                "description": "Complete 72-hour overhaul of a low-performance site (Lighthouse score 24). Information architecture reconstruction, mobile-first design, and conversion-oriented copywriting.",
+                "context": "When this client contacted us, they faced a critical issue. Their high-end professional cleaning and concierge business was thriving, but their website told a different story: a Lighthouse score of 24, eight-second load times, and a completely broken mobile experience. Every lost visitor was a lost client. The constraint? Build everything from scratch in 72 hours with zero downtime.",
+                "strategy": [
+                    "Full 2-hour audit (Lighthouse, UX, SEO) to identify technical bottlenecks.",
+                    "Architecture restructuring to serve 3 distinct client personas and journeys.",
+                    "High-speed Design & Copywriting focused on conversion and brand authority.",
+                    "Performance Engineering: WebP images, lazy loading, and aggressive caching."
+                ],
+                "impact": "At Hour 72, the site went from a score of 24 to 96. Performance quadrupled, accessibility reached 94, and SEO hit 100%. A digital asset that finally matches their level of service excellence."
+            },
+            {
+                "title": "Softkits",
+                "slug": "softkits",
+                "sector": "Premium Tech & Audio E-commerce",
+                "result": "Complete Redesign · 7 Days",
+                "img": "/images/softkits.webp",
+                "description": "Full e-commerce experience overhaul for a premium tech brand. Radical visual redesign, checkout optimization, and performance engineering.",
+                "context": "Softkits faced a common challenge: their products were excellent, but their website betrayed them with a dated interface that failed to reflect the premium quality of their audio gear and smartwatches. Our mission was to rebuild the entire e-commerce experience in just seven days—from visual identity to the checkout flow.",
+                "strategy": [
+                    "Behavioral analysis to identify friction points and cart abandonment triggers.",
+                    "Radical visual positioning (Deep Black & Acid Green) for a strong, memorable identity.",
+                    "Complete catalog overhaul with emotion-driven and conversion-oriented product copywriting.",
+                    "Streamlined purchase journey and ultra-fast technical integration (< 1s)."
+                ],
+                "impact": "Seven days after the brief, the site was live. Softkits' customers felt the difference immediately: a seamless experience that finally inspires confidence and desire. The redesign didn't just look better; it actively turned visitors into loyal buyers."
+            },
+            {
+                "title": "U Solution Academy",
+                "slug": "u-solution-academy",
+                "sector": "Elite Business Accelerator · Benin",
+                "result": "Full Platform · 15-Day Sprint",
+                "img": "/images/u-solution.webp",
+                "description": "From-scratch creation of an elite acceleration platform. Strategy, radical identity, and backend recruitment ecosystem delivered in 15 days.",
+                "context": "U Solution Academy didn't want a website; they wanted a weapon. Our mission was to build a complete digital ecosystem in just 15 days—strategy, design, frontend, and backend—to forge African leaders and connect elite talent with top-tier firms.",
+                "strategy": [
+                    "Value-driven strategy tailored for three key audiences: entrepreneurs, executives, and recruiters.",
+                    "Strategic Design: A 'domination-focused' identity with a radical, selective visual universe.",
+                    "Disruptive Copywriting focused on urgency, authority, and elite brand belonging.",
+                    "Backend Engineering: Dedicated talent marketplace to directly link academy members with partners."
+                ],
+                "impact": "Fifteen days after the brief, the platform was live with perfect technical scores (100 SEO & Best Practices). It's more than a site—it's a strategic business engine for an entire professional ecosystem."
+            },
+            {
+                "title": "Mr. Johan Studio",
+                "slug": "mr-johan",
+                "sector": "Cotonou, Benin • Videographer & Editor",
+                "result": "Record delivery (5 days)",
+                "img": "/images/mr-johan.webp",
+                "description": "A talented videographer without a digital presence is an artist whispering in an empty room. Mr. Johan had the skills; what he lacked was a showcase matching his work.",
+                "context": "The mission: create from scratch the digital identity of a freelance videographer based in Cotonou. Five days to build a site that is itself a demonstration of what he sells: precision, emotion, and attention-grabbing imagery.",
+                "strategy": [
+                    "Cinematic visual identity (B&W)",
+                    "Content-centric architecture (Video focus)",
+                    "Emotional and minimalist copywriting",
+                    "Seamless scroll-orchestrated transitions"
+                ],
+                "impact": "Quality work. Now, every image captivates the audience even before the video starts playing."
+            }
+        ]
+    },
+    "testimonials": {
+        "eyebrow": "04 — Testimonials",
+        "title": "Our clients say it\nbetter than we do.",
+        "items": [
+            {
+                "quote": "Lumina transformed our digital presence into something we're truly proud of. Concrete result: more incoming requests than during the entire previous year.",
+                "author": "Aminata Diallo",
+                "role": "CEO · Groupe Kora, Cotonou"
+            },
+            {
+                "quote": "What sets Lumina apart is clarity. At each stage, I knew exactly where we stood. Delivered in 5 weeks, as promised. The result exceeds my expectations.",
+                "author": "Marc Houessou",
+                "role": "Founder · Studio Akwaba, Abidjan"
+            }
+        ]
+    },
+    "cta_mid": {
+        "title": "Your website deserves\nto match your ambition.",
+        "btn": "Start your project",
+        "disclaimer": "Response within 48h · No commitment · Benin & international"
+    },
+    "studio": {
+        "eyebrow": "05 — The studio",
+        "title": "A premium digital agency,\nrooted in Benin.",
+        "p1": "We built Lumina with a simple conviction: African and francophone businesses deserve websites on par with the best international agencies. Not watered-down adaptations.",
+        "p2": "No dressed-up templates. Real bespoke creation, with the same standards as studios in Paris, Geneva or Montreal. 10 years of expertise. A team that knows your markets. A standard that's non-negotiable.",
+        "btn": "Discover our philosophy",
+        "badge": "of expertise · 15 projects delivered · 100% satisfaction"
+    },
+    "faq": {
+        "eyebrow": "FAQ",
+        "title": "Everything you\nneed to know.",
+        "items": [
+            {
+                "q": "How much does a website cost at Lumina?",
+                "a": "Our prices start at 350€ for an optimized one-page website. Every project is unique, so we provide a precise quote after our first conversation."
+            },
+            {
+                "q": "Do you work with clients outside Benin?",
+                "a": "Yes, that's a significant part of our work. We work with clients in Benin, Côte d'Ivoire, Senegal, Togo, France, Belgium and Canada. Distance has no impact on our level of quality."
+            },
+            {
+                "q": "What are your timelines for website creation?",
+                "a": "Most of our projects are delivered in 7 days to 6 weeks depending on complexity. We aim to deliver as fast as possible so your asset becomes profitable quickly."
+            },
+            {
+                "q": "Will my website be optimized for Google search?",
+                "a": "Yes, always. Technical SEO is included in every build: clean architecture, semantic tags, optimized speed, Core Web Vitals in the green. This isn't optional — it's our standard."
+            },
+            {
+                "q": "What happens after the website is delivered?",
+                "a": "We don't disappear. 7-day/week availability post-delivery, a 30-day performance review, and support for any adjustments needed."
+            }
+        ]
+    },
+    "cta_final": {
+        "eyebrow": "Time to illuminate your market.",
+        "title": "Your project\ndeserves Lumina.",
+        "subtitle": "Let's talk about your vision. We'll make it visible. Response within 48h · No commitment.",
+        "btn_primary": "Start a project",
+        "btn_secondary": "View our work"
+    },
+    "footer": {
+        "tagline": "Digital excellence, accessible.",
+        "copyright": "© 2026 Lumina — All rights reserved. Web agency · Cotonou, Benin & French-speaking world.",
+        "legal": "Legal Notice",
+        "privacy": "Privacy Policy"
+    },
+    "services": {
+        "eyebrow": "Expertise",
+        "title": "Custom digital creation\nand strategy.",
+        "cards": [
+            {
+                "title": "Professional Web Engineering",
+                "desc": "Bespoke websites optimized for SEO and conversion. We build digital assets that dominate your market in Benin and internationally.",
+                "features": [
+                    "High-precision UI/UX Design",
+                    "High-performance React & Vite development",
+                    "Technical & semantic SEO included",
+                    "Core Web Vitals in the green"
+                ]
+            },
+            {
+                "title": "Authority Design & Branding",
+                "desc": "Translate your excellence into a powerful visual identity. We create brands that assert their leadership and inspire immediate trust.",
+                "features": [
+                    "Strategic logotype",
+                    "Premium typography & iconography",
+                    "Coherent visual system (Design System)",
+                    "Complete Brand Book"
+                ]
+            },
+            {
+                "title": "SEO Optimization & Redesign",
+                "desc": "Transform your current website into a lead-generating machine. We identify every friction point to maximize your Google visibility and ROI.",
+                "features": [
+                    "UX, Speed & Conversion Audit",
+                    "Technical migration without SEO loss",
+                    "A/B Testing & Data Analysis",
+                    "Premium design redesign"
+                ]
+            }
+        ],
+        "process": {
+            "title": "Our process.",
+            "subtitle": "From discovery to launch, we follow a rigorous methodology to guarantee excellence at every pixel.",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Discovery",
+                    "desc": "Analysis of your objectives and market."
+                },
+                {
+                    "step": "02",
+                    "title": "Strategy",
+                    "desc": "Defining the user journey and structure."
+                },
+                {
+                    "step": "03",
+                    "title": "Design",
+                    "desc": "Creating the premium interface and identity."
+                },
+                {
+                    "step": "04",
+                    "title": "Dev",
+                    "desc": "High-precision web engineering."
+                },
+                {
+                    "step": "05",
+                    "title": "Launch",
+                    "desc": "Final delivery in 7 days to 6 weeks."
+                }
+            ]
+        },
+        "cta_btn": "Learn more"
+    },
+    "studio_page": {
+        "eyebrow": "The Studio",
+        "title": "The leading web agency\nin Benin.",
+        "hero": {
+            "title": "International expertise, local roots.",
+            "p1": "Based in Cotonou, Lumina supports ambitious companies in their digital transformation. We believe every brand deserves a website that reflects its excellence.",
+            "p2": "We are a tight-knit team of experts passionate about design and performance. Whether you are in Benin or elsewhere in the French-speaking world, we are your strategic partner for an authoritative web presence."
+        },
+        "stats": {
+            "years": "10+ years",
+            "years_label": "Collective expertise",
+            "projects": "15",
+            "projects_label": "Exceptional projects"
+        },
+        "manifesto": {
+            "title": "Our Manifesto.",
+            "items": [
+                {
+                    "title": "Radical Clarity",
+                    "desc": "Simplicity is the ultimate luxury. We eliminate the noise so your message becomes self-evident."
+                },
+                {
+                    "title": "Aesthetic Performance",
+                    "desc": "Beauty is not an option, it's a conversion lever. A polished design inspires immediate trust."
+                },
+                {
+                    "title": "Absolute Rigor",
+                    "desc": "Every project is treated as a masterpiece. We make no distinction between business sizes."
+                },
+                {
+                    "title": "Constant Standard",
+                    "desc": "Trends are fleeting, our quality is constant. We build durable digital assets."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Let's work together.",
+            "btn": "Start a project"
+        }
+    },
+    "contact": {
+        "eyebrow": "Contact",
+        "title": "Let's build\nyour authority.",
+        "subtitle": "Ready to launch your website project? Response within 48h. Let's simply discuss your ambition.",
+        "email_label": "Direct email",
+        "location_label": "Location",
+        "location": "Cotonou, Benin & International",
+        "form": {
+            "name_label": "First + Last name",
+            "name_placeholder": "John Smith",
+            "email_label": "Email",
+            "email_placeholder": "john@company.com",
+            "company_label": "Company / Sector",
+            "company_placeholder": "Aura Sequoia",
+            "message_label": "Describe your ambition",
+            "message_placeholder": "What are your growth objectives?",
+            "budget_label": "Estimated budget",
+            "budget_placeholder": "Select your budget",
+            "budgets": [
+                "350€ - 750€",
+                "750€ - 1,500€",
+                "1,500€ - 2,500€",
+                "2,500€ +"
+            ],
+            "submit": "Send my request",
+            "loading": "Sending..."
+        }
+    },
+    "insights_page": {
+        "eyebrow": "Insights",
+        "title": "Digital<br />intelligence.",
+        "newsletter": {
+            "title": "Stay informed.",
+            "subtitle": "Subscribe to our newsletter to receive our latest analyses on design, tech and conversion.",
+            "placeholder": "your@email.com",
+            "btn": "Subscribe"
+        },
+        "articles": [
+            {
+                "slug": "importance-seo-professional-website",
+                "title": "The Importance of SEO in Professional Website Creation",
+                "category": "Strategy",
+                "date": "Feb 21, 2026",
+                "readTime": "9 min",
+                "author": "Lumina Studio",
+                "content": {
+                    "intro": "Every year, thousands of businesses invest in beautiful websites — only to watch them fade into indifference. The reason? A lack of SEO strategy from the start. SEO is not a layer applied afterward: it’s the structural skeleton upon which everything else rests.",
+                    "sections": [
+                        {
+                            "title": "1. What is SEO, really?",
+                            "text": "SEO is a three-part discipline: technical (performance, indexing), content (relevance, authority), and popularity (notoriety). Unlike advertising, it’s a cumulative asset that works for you for years.",
+                            "action": "Think of SEO as sustainable infrastructure rather than a one-off marketing expense."
+                        },
+                        {
+                            "title": "2. Integrate SEO from the design phase",
+                            "text": "Retrofitting a site costs 3 to 5 times more. Information architecture must be designed according to what your customers are searching for, not just what you want to say. Every URL is a long-lasting strategic decision.",
+                            "action": "Define your page structure based on your prospects' search intent before you even start the design."
+                        },
+                        {
+                            "title": "3. Technical Foundations",
+                            "text": "Before being read, your site must be readable by Google. This involves Core Web Vitals (performance), HTTPS (security), and Mobile-First indexing. A one-second delay can reduce your conversions by 7%.",
+                            "action": "Aim for a flawless performance score. Technique is the indispensable prerequisite for your content to be seen."
+                        },
+                        {
+                            "title": "4. Content Strategy (E-E-A-T)",
+                            "text": "Google rewards Expertise, Authority, and Trustworthiness. 1,000 casual visitors are worth less than 50 visitors with transactional intent (quote request). Target the intent, not just the volume.",
+                            "action": "Create topic clusters to demonstrate your deep expertise in your key areas."
+                        },
+                        {
+                            "title": "5. The Secret Weapon: Local SEO",
+                            "text": "46% of searches have local intent. A well-optimized SME on Google Business Profile can compete with giants through proximity, customer reviews, and geolocated pages.",
+                            "action": "Optimize your Google Business Profile to 100% and collect authentic reviews to dominate your area."
+                        },
+                        {
+                            "title": "6. Errors that Sabotage Everything",
+                            "text": "Duplicate content, neglected Title tags, missing 'Alt' text on images, or keyword stuffing. These simple mistakes prevent Google from understanding and valuing your site.",
+                            "action": "Ensure each page has a unique 60-character title and that your visuals are descriptive for search robots."
+                        },
+                        {
+                            "title": "7. Measure and Iterate",
+                            "text": "Use Google Search Console and GA4 to track your performance. The virtuous cycle: analyze, identify opportunities, optimize, measure. Winners iterate faster than their competitors.",
+                            "action": "Don't aim for perfection at launch. Launch, measure, and refine your strategy based on real data."
+                        }
+                    ],
+                    "conclusion": "A site designed without SEO is a house without windows: beautiful inside, but invisible to the world. Integrate SEO from the very first pixel."
+                }
+            },
+            {
+                "slug": "why-choose-web-agency-benin",
+                "title": "The importance of choosing an elite digital partner",
+                "category": "Strategy",
+                "date": "Feb 12, 2026"
+            },
+            {
+                "slug": "why-your-website-isnt-converting",
+                "title": "Your site attracts visitors but doesn't convert: here's why",
+                "category": "Client Issues",
+                "date": "Feb 20, 2026",
+                "readTime": "9 min",
+                "author": "Lumina Studio",
+                "content": {
+                    "intro": "You have a website. It displays correctly. It gets visitors. And yet — nothing. No messages, no requests, no sales. Just Google Analytics stats spinning in a void.\n\nThis scenario is far more common than you think. Most of the time, site owners look for answers in the wrong place. The good news: these problems can be diagnosed. And once diagnosed, they can be fixed.",
+                    "sections": [
+                        {
+                            "title": "1. Your design doesn't inspire trust",
+                            "text": "In less than five seconds, a visitor decides whether to stay or leave. This decision is instinctive and based almost entirely on visual impression. A dated or confusing design sends an immediate negative signal.",
+                            "action": "Open your site as if discovering it for the first time. Ask yourself honestly: does it inspire trust in me?"
+                        },
+                        {
+                            "title": "2. Your value proposition isn't clear",
+                            "text": "A visitor asks three questions: what do you do, for whom, and why you? If your site doesn't answer these specifically in five seconds, the visitor leaves.",
+                            "action": "Reformulate your main headline. Be specific: talk about client benefits rather than yourself."
+                        },
+                        {
+                            "title": "3. You're attracting the wrong traffic",
+                            "text": "All traffic is not equal. A hundred qualified visitors with buying intent are worth more than ten thousand visitors searching for general info out of curiosity.",
+                            "action": "Analyze your keywords in Search Console. Prioritize those indicating commercial intent (quote, price, custom)."
+                        },
+                        {
+                            "title": "4. Your calls to action (CTA) are ineffective",
+                            "text": "A CTA must clearly tell the visitor what to do next. If they are too rare, hidden at the bottom, or timidly phrased, you lose conversions systematically.",
+                            "action": "Use contrasting colors for your buttons and benefit-oriented text like 'Start my project' rather than 'Contact us'."
+                        },
+                        {
+                            "title": "5. Your site lacks social proof",
+                            "text": "A new visitor has no reason to trust you a priori. Testimonials, logos, and case studies are the elements that build the credibility needed for action.",
+                            "action": "Display authentic client testimonials with photos and concrete results. Social proof is your best salesperson."
+                        },
+                        {
+                            "title": "6. The user journey creates friction",
+                            "text": "Every extra step is a friction point. Forms that are too long or slow loading speeds tire mobile users, who abandon quickly.",
+                            "action": "Simplify your forms as much as possible and aim for loading in under 3 seconds on a 4G connection."
+                        },
+                        {
+                            "title": "7. Your site isn't designed to convert",
+                            "text": "A site that converts isn't just 'beautiful', it's intentional. Every element must guide the visitor through a deliberate conviction path rather than just existing.",
+                            "action": "Ask yourself for each section: what is its precise role in the visitor's conviction path?"
+                        }
+                    ],
+                    "conclusion": "A site that converts is the result of a cohesive design where strategy, design, and tech work together. This is the Lumina method."
+                }
+            },
+            {
+                "slug": "lumina-redefining-web-standards-africa",
+                "title": "How Lumina is redefining web standards in Francophone Africa",
+                "category": "Vision",
+                "date": "Jan 28, 2026"
+            },
+            {
+                "slug": "web-trends-2026",
+                "title": "The 5 web trends of 2026 your site must integrate to stay on Google",
+                "category": "News & Trends",
+                "date": "Feb 21, 2026",
+                "readTime": "8 min",
+                "author": "Lumina Studio",
+                "content": {
+                    "intro": "Every year, thousands of websites gradually disappear from Google results. Not because they are doing something wrong, but because they are no longer doing anything new.\n\nThe web is moving forward. Algorithms evolve. User behaviors change. And sites that don't adapt don't collapse overnight — they fade away slowly, page by page, position by position.\n\n2026 marks a particularly clear turning point. Artificial intelligence has transformed how people seek information. Technical performance standards have been raised. Conversational design has replaced decorative design. And Google has clearly indicated what it rewards — and what it punishes.",
+                    "sections": [
+                        {
+                            "title": "1. AI has changed how your customers find you",
+                            "text": "In 2026, users ask questions to ChatGPT, Perplexity, or Gemini — and these tools provide direct answers. To appear in these answers, your site must be a reference on specific topics with structured information.",
+                            "action": "Create expert, long-form content (1,500 words) that answers real customer questions rather than targeting generic keywords."
+                        },
+                        {
+                            "title": "2. Core Web Vitals are now a hard ranking factor",
+                            "text": "Technical performance (LCP, CLS, INP) directly influences your ranking. If your site is slow or visually unstable, Google systematically penalizes it.",
+                            "action": "Aim for a score above 90 on PageSpeed Insights. Optimize your images to WebP and reduce blocking resources."
+                        },
+                        {
+                            "title": "3. Mobile-first is no longer an option — it's the foundation",
+                            "text": "With over 85% mobile traffic in West Africa, a site must be designed for thumbs and small screens first. An 'adapted' site is no longer enough.",
+                            "action": "Ensure your content is readable without zooming and buttons are easy to click on a smartphone."
+                        },
+                        {
+                            "title": "4. Conversational design has replaced decorative design",
+                            "text": "Every visual element must guide the visitor to the next action. Design exists to serve the conversation, not just for aesthetics.",
+                            "action": "Simplify your interfaces: less noise, more intent. Guide the user to the next logical step."
+                        },
+                        {
+                            "title": "5. E-E-A-T content is now the only kind that counts",
+                            "text": "Expertise, Authoritativeness, Trustworthiness, and Experience. Google favors content produced by real humans with concrete field experience.",
+                            "action": "Sign your articles, showcase your team and real projects. Authenticity is your best SEO asset."
+                        }
+                    ],
+                    "conclusion": "The 2026 web rewards sites that take their visitors seriously. This is a building philosophy that Lumina has been applying for ten years."
+                }
+            }
+        ]
+    },
+    "casestudy": {
+        "strategy": "Our Strategy",
+        "impact": "The Impact",
+        "next": "Next Project",
+        "cta": {
+            "title": "Ready to transform your presence?",
+            "subtitle": "Let's discuss your vision and see how we can illuminate your market.",
+            "btn": "Start"
+        }
+    }
+}
