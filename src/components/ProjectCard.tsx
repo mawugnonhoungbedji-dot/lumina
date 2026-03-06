@@ -62,7 +62,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, sector, result,
           <div className="flex justify-between items-end">
             <div>
               <p className="text-white/60 text-[10px] font-bold uppercase tracking-[0.2em] mb-3">{sector}</p>
-              <h4 className="text-4xl font-bold font-display text-white tracking-tight">{title}</h4>
+              <h4 className="h2 text-white">{title}</h4>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, sector, result,
       {/* External Info (Visible by default) */}
       <div className="mt-10 flex justify-between items-center px-6">
         <div>
-          <h4 className="text-2xl font-bold font-display text-ink group-hover:translate-x-3 transition-transform duration-500 tracking-tight">{title}</h4>
+          <h4 className="h2 group-hover:translate-x-3 transition-transform duration-500">{title}</h4>
           <p className="text-ink/40 text-sm font-medium mt-1">{sector}</p>
         </div>
         <div className="h-px flex-grow mx-10 bg-border opacity-0 group-hover:opacity-100 transition-all duration-700 scale-x-0 group-hover:scale-x-100 origin-left" />

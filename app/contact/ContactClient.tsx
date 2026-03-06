@@ -80,7 +80,7 @@ export function ContactClient() {
                 <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 font-sans">
                     <FadeIn>
                         <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-ink/40 mb-6 block text-center lg:text-left">{t('contact.eyebrow')}</span>
-                        <h1 className="text-4xl lg:text-8xl font-black font-display text-ink mb-12 tracking-tight whitespace-pre-line text-center lg:text-left">
+                        <h1 className="display mb-12 text-center lg:text-left">
                             {t('contact.title')}
                         </h1>
                         <p className="text-lg text-ink/60 leading-relaxed mb-12 max-w-md font-medium text-center lg:text-left mx-auto lg:mx-0">
@@ -92,7 +92,7 @@ export function ContactClient() {
                                     <Mail className="w-4 h-4" strokeWidth={1.5} />
                                     {t('contact.email_label')}
                                 </div>
-                                <a href={`mailto:${CONTACT_EMAIL}`} className="text-xl lg:text-2xl font-black font-display text-ink hover:text-ink/60 transition-colors decoration-border underline-offset-[12px] underline decoration-2 break-all text-center lg:text-left">
+                                <a href={`mailto:${CONTACT_EMAIL}`} className="h2 hover:text-ink/60 transition-colors decoration-border underline-offset-[12px] underline decoration-2 break-all text-center lg:text-left">
                                     {CONTACT_EMAIL}
                                 </a>
                             </div>
@@ -101,7 +101,7 @@ export function ContactClient() {
                                     <MapPin className="w-4 h-4" strokeWidth={1.5} />
                                     {t('contact.location_label')}
                                 </div>
-                                <p className="text-xl lg:text-2xl font-black font-display text-ink text-center lg:text-left">{t('contact.location')}</p>
+                                <p className="h2 text-center lg:text-left">{t('contact.location')}</p>
                             </div>
                         </div>
                     </FadeIn>
@@ -113,7 +113,7 @@ export function ContactClient() {
                                     <div className="w-20 h-20 bg-emerald-500/10 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-8 animate-pulse">
                                         <CheckCircle2 className="w-10 h-10" />
                                     </div>
-                                    <h3 className="text-3xl font-bold font-display text-ink">Message envoyé !</h3>
+                                    <h3 className="h2">Message envoyé !</h3>
                                     <p className="text-ink/60 max-w-sm mx-auto">
                                         Merci ! WhatsApp s'ouvre automatiquement pour que vous puissiez discuter de votre projet en direct.
                                     </p>
