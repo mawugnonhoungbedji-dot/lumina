@@ -20,7 +20,7 @@ export function ServicesClient() {
     const processIcons = [Search, Compass, PenTool, Code, Rocket];
 
     return (
-        <div className="pt-40 pb-32 px-6 lg:px-12">
+        <div className="pt-32 md:pt-40 pb-32 px-4 md:px-6 lg:px-12">
             <div className="max-w-7xl mx-auto">
                 <FadeIn>
                     <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-ink/40 mb-6 block">{t('services.eyebrow')}</span>
@@ -29,7 +29,7 @@ export function ServicesClient() {
                     </h1>
                 </FadeIn>
 
-                <div className="grid lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {(t('services.cards', { returnObjects: true }) as any[]).map((service, i) => (
                         <FadeIn key={i} delay={i * 0.1}>
                             <div className="mcard h-full flex flex-col justify-between group">
@@ -57,7 +57,7 @@ export function ServicesClient() {
                 </div>
 
                 <FadeIn delay={0.5}>
-                    <div className="mt-32 grid lg:grid-cols-2 gap-16 items-center p-12 lg:p-24 rounded-apple-xl bg-sec-b border border-border">
+                    <div className="mt-20 md:mt-32 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center p-6 md:p-12 lg:p-24 rounded-apple-xl bg-sec-b border border-border">
                         <div>
                             <h2 className="h2 mb-6">{t('services.process.title')}</h2>
                             <p className="text-ink/60 leading-relaxed">{t('services.process.subtitle')}</p>
@@ -66,7 +66,7 @@ export function ServicesClient() {
                             {(t('services.process.steps', { returnObjects: true }) as any[]).map((s, i) => {
                                 const Icon = processIcons[i % processIcons.length];
                                 return (
-                                    <div key={i} className="flex gap-6 items-start group">
+                                    <div key={i} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start group">
                                         <div className="w-12 h-12 rounded-xl bg-ink/5 flex items-center justify-center shrink-0 group-hover:bg-ink group-hover:text-bg transition-colors duration-500">
                                             <Icon className="w-5 h-5" strokeWidth={1.5} />
                                         </div>

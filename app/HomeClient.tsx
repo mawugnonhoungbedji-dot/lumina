@@ -62,7 +62,7 @@ export function HomeClient() {
     return (
         <>
             {/* SECTION 1 — Hero */}
-            <section className="pt-40 lg:pt-56 pb-20 px-6 lg:px-12 bg-bg relative min-h-[90vh] flex items-center">
+            <section className="pt-32 md:pt-40 lg:pt-56 pb-20 px-4 md:px-6 lg:px-12 bg-bg relative min-h-[90vh] flex items-center">
                 <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
                     <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-ink/5 rounded-full blur-[120px] -mr-40 -mt-40" />
                     <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-ink/5 rounded-full blur-[100px] -ml-20 -mb-20" />
@@ -113,7 +113,7 @@ export function HomeClient() {
                         </div>
                     </FadeIn>
 
-                    <div className="mt-28 lg:mt-40 grid grid-cols-2 lg:grid-cols-4 gap-px bg-border border border-border rounded-apple-lg overflow-hidden shadow-2xl shadow-ink/5">
+                    <div className="mt-20 md:mt-28 lg:mt-40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border border border-border rounded-apple-lg overflow-hidden shadow-2xl shadow-ink/5">
                         {[
                             { label: t('hero.stats.satisfaction'), value: '100%' },
                             { label: t('hero.stats.delais'), value: '97%' },
@@ -139,9 +139,9 @@ export function HomeClient() {
             <section className="py-16 border-y border-border bg-sec-b/20 overflow-hidden">
                 <div className="max-w-7xl mx-auto px-6">
                     <p className="text-[9px] font-black uppercase tracking-[0.3em] text-ink/20 mb-10 text-center">{t('logos.label')}</p>
-                    <div className="flex flex-wrap justify-center items-center gap-16 lg:gap-32 opacity-30 grayscale hover:grayscale-0 transition-all duration-700">
+                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 lg:gap-32 opacity-30 grayscale hover:grayscale-0 transition-all duration-700">
                         {['GLOT PRO', 'MindFluence', 'CortexFunnels', 'SOFTKIT'].map((logo) => (
-                            <span key={logo} className="text-3xl font-black font-display tracking-tighter hover:text-ink transition-colors cursor-default">{logo}</span>
+                            <span key={logo} className="text-xl md:text-2xl lg:text-3xl font-black font-display tracking-tighter hover:text-ink transition-colors cursor-default">{logo}</span>
                         ))}
                     </div>
                 </div>
@@ -174,7 +174,7 @@ export function HomeClient() {
                         <h2 className="h2 mb-20 whitespace-pre-line text-center lg:text-left">{t('approach.title')}</h2>
                         <p className="lead mb-20 max-w-2xl text-center lg:text-left mx-auto lg:mx-0">{t('approach.subtitle')}</p>
                     </FadeIn>
-                    <div className="grid lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {(t('approach.cards', { returnObjects: true }) as any[]).map((sol, i) => {
                             const Icon = approachIcons[i];
                             return (
@@ -244,9 +244,9 @@ export function HomeClient() {
                         <span className="text-[10px] font-black uppercase tracking-[0.3em] text-ink/30 mb-8 block">{t('testimonials.eyebrow')}</span>
                         <h2 className="h2 mb-20 whitespace-pre-line">{t('testimonials.title')}</h2>
                     </FadeIn>
-                    <div className="grid md:grid-cols-2 gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         {(t('testimonials.items', { returnObjects: true }) as any[]).map((testimonial, i) => (
-                            <FadeIn key={i} delay={i * 0.1} className="mcard bg-bg flex flex-col justify-between group hover:shadow-2xl transition-all duration-700">
+                            <FadeIn key={i} delay={i * 0.1} className="mcard bg-bg flex flex-col justify-between group hover:shadow-2xl transition-all duration-700 p-6 md:p-8 lg:p-11">
                                 <div>
                                     <Quote className="w-12 h-12 text-ink/5 mb-10 group-hover:text-ink/10 transition-colors duration-500" />
                                     <p className="text-xl lg:text-2xl font-medium text-ink leading-relaxed mb-16 italic font-serif">"{testimonial.quote}"</p>
@@ -296,9 +296,9 @@ export function HomeClient() {
             </section>
 
             {/* SECTION 8 — À propos rapide */}
-            <section className="py-40 px-6 lg:px-12 bg-bg transition-colors duration-300 relative overflow-hidden">
+            <section className="py-24 md:py-40 px-4 md:px-6 lg:px-12 bg-bg transition-colors duration-300 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="grid lg:grid-cols-2 gap-20 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <FadeIn className="text-center lg:text-left">
                             <span className="text-[10px] font-black uppercase tracking-[0.3em] text-ink/30 mb-8 block">{t('studio.eyebrow')}</span>
                             <h2 className="h2 mb-10 text-balance leading-tight tracking-tighter">{t('studio.title')}</h2>
@@ -346,9 +346,9 @@ export function HomeClient() {
             </section>
 
             {/* SECTION 10 — CTA Final */}
-            <section className="py-32 px-6 lg:px-12">
+            <section className="py-24 md:py-32 px-4 md:px-6 lg:px-12">
                 <div className="max-w-7xl mx-auto">
-                    <FadeIn className="bg-card border border-border rounded-apple-xl p-16 lg:p-28 text-center relative overflow-hidden group">
+                    <FadeIn className="bg-card border border-border rounded-apple-xl p-8 md:p-16 lg:p-28 text-center relative overflow-hidden group">
                         <div className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
                             <div className="absolute -top-24 -left-24 w-96 h-96 bg-ink/5 rounded-full blur-[120px] group-hover:scale-110 transition-transform duration-1000" />
                             <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-ink/5 rounded-full blur-[120px] group-hover:scale-110 transition-transform duration-1000" />

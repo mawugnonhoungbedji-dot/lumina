@@ -1,12 +1,26 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Plus_Jakarta_Sans, Montserrat } from 'next/font/google';
 import '../src/index.css';
 import { Navbar } from '../src/components/Navbar';
 import { Providers } from './providers';
 import { CursorLayer } from './CursorLayer';
 
+const plusJakartaSans = Plus_Jakarta_Sans({
+    subsets: ['latin'],
+    variable: '--font-sans',
+    display: 'swap',
+});
+
+const montserrat = Montserrat({
+    subsets: ['latin'],
+    variable: '--font-display',
+    display: 'swap',
+});
+
 export const metadata: Metadata = {
+    metadataBase: new URL('https://lumina.agency'),
     title: {
         template: '%s | Lumina — Agence Créative Premium',
         default: 'Lumina — Design, Développement & Stratégie Digitale',
@@ -36,7 +50,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="fr" data-theme="dark" suppressHydrationWarning>
-            <body className="min-h-screen selection:bg-ink selection:text-bg overflow-x-hidden bg-bg transition-colors duration-300">
+            <body className={`${plusJakartaSans.variable} ${montserrat.variable} min-h-screen selection:bg-ink selection:text-bg overflow-x-hidden bg-bg transition-colors duration-300 font-sans`}>
                 <Providers>
                     {/* Custom cursor + scroll progress bar (client-only) */}
                     <CursorLayer />

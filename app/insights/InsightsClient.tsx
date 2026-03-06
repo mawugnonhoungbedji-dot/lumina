@@ -27,14 +27,14 @@ export function InsightsClient() {
     };
 
     return (
-        <div className="pt-40 pb-32 px-6 lg:px-12">
+        <div className="pt-32 md:pt-40 pb-32 px-4 md:px-6 lg:px-12">
             <div className="max-w-7xl mx-auto">
                 <FadeIn>
                     <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-ink/40 mb-6 block">{t('insights_page.eyebrow')}</span>
                     <h1 className="display mb-16 whitespace-pre-line text-left" dangerouslySetInnerHTML={{ __html: t('insights_page.title') }} />
                 </FadeIn>
 
-                <div className="grid md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     {(t('insights_page.articles', { returnObjects: true }) as any[]).map((article, i) => (
                         <FadeIn key={i} delay={i * 0.1}>
                             <Link href={`/insights/${article.slug}`} className="group cursor-pointer block">
@@ -60,7 +60,7 @@ export function InsightsClient() {
                 </div>
 
                 <FadeIn delay={0.5}>
-                    <div className="mt-32 p-8 sm:p-12 lg:p-24 rounded-apple-xl bg-card border border-border flex flex-col items-center text-center group/newsletter">
+                    <div className="mt-20 md:mt-32 p-6 md:p-12 lg:p-24 rounded-apple-xl bg-card border border-border flex flex-col items-center text-center group/newsletter">
                         <h2 className="h2 mb-6 sm:mb-8">{t('insights_page.newsletter.title')}</h2>
                         <p className="text-ink/60 max-w-xl mb-8 sm:mb-12 text-sm sm:text-base">{t('insights_page.newsletter.subtitle')}</p>
                         <form onSubmit={handleNewsletter} className="flex flex-col sm:flex-row w-full max-w-md gap-3">

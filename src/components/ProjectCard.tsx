@@ -22,7 +22,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, sector, result,
       whileInView={priority ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={priority ? { duration: 0 } : { duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
-      className="group relative"
+      className="group relative cursor-pointer"
+      onClick={onClick}
     >
       {/* The "Box" / Frame */}
       <div className="relative aspect-[16/11] rounded-[48px] overflow-hidden bg-card border border-border group-hover:shadow-3xl group-hover:shadow-ink/10 transition-all duration-700">

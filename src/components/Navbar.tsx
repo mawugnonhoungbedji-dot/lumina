@@ -67,9 +67,9 @@ export const Navbar = () => {
         className="fixed top-0 left-0 right-0 h-0.5 bg-ink z-[100] origin-left"
         style={{ scaleX }}
       />
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'py-4' : 'py-8'}`}>
-        <div className="max-w-7xl mx-auto px-6">
-          <div className={`flex items-center justify-between transition-all duration-500 rounded-full px-6 py-2 ${isScrolled ? 'glass shadow-lg' : ''}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'py-4' : 'py-6 md:py-8'}`}>
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className={`flex items-center justify-between transition-all duration-500 rounded-full px-4 md:px-6 py-2 ${isScrolled ? 'glass shadow-lg' : ''}`}>
             <Link href="/" className="flex items-center">
               <span className="text-xl font-bold tracking-tighter font-display text-ink">Lumina.</span>
             </Link>

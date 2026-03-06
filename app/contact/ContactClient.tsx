@@ -75,9 +75,14 @@ export function ContactClient() {
     };
 
     return (
-        <div className="pt-32 lg:pt-40 pb-20 lg:pb-32 px-6 lg:px-12">
-            <div className="max-w-7xl mx-auto">
-                <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 font-sans">
+        <div className="pt-32 lg:pt-56 pb-20 lg:pb-40 px-6 lg:px-12 bg-bg relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-ink/5 rounded-full blur-[120px] -mr-40 -mt-40" />
+                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-ink/5 rounded-full blur-[100px] -ml-20 -mb-20" />
+            </div>
+
+            <div className="max-w-6xl mx-auto relative z-10">
+                <div className="grid lg:grid-cols-2 gap-20 lg:gap-32 font-sans items-start">
                     <FadeIn>
                         <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-ink/40 mb-6 block text-center lg:text-left">{t('contact.eyebrow')}</span>
                         <h1 className="display mb-12 text-center lg:text-left">
@@ -86,28 +91,29 @@ export function ContactClient() {
                         <p className="text-lg text-ink/60 leading-relaxed mb-12 max-w-md font-medium text-center lg:text-left mx-auto lg:mx-0">
                             {t('contact.subtitle')}
                         </p>
-                        <div className="space-y-12 flex flex-col items-center lg:items-start">
+                        <div className="space-y-12 flex flex-col items-center lg:items-start pt-8 border-t border-border mt-16 max-w-sm">
                             <div className="group cursor-pointer flex flex-col items-center lg:items-start w-full">
-                                <div className="text-[11px] font-bold uppercase tracking-widest text-ink/20 mb-3 flex items-center gap-2 group-hover:text-ink/40 transition-colors">
+                                <div className="text-[10px] font-black uppercase tracking-[0.2em] text-ink/20 mb-3 flex items-center gap-2 group-hover:text-ink/40 transition-colors">
                                     <Mail className="w-4 h-4" strokeWidth={1.5} />
                                     {t('contact.email_label')}
                                 </div>
-                                <a href={`mailto:${CONTACT_EMAIL}`} className="h2 hover:text-ink/60 transition-colors decoration-border underline-offset-[12px] underline decoration-2 break-all text-center lg:text-left">
+                                <a href={`mailto:${CONTACT_EMAIL}`} className="text-lg lg:text-xl font-bold font-display hover:text-ink/60 transition-colors decoration-border underline-offset-[12px] underline decoration-1 break-all text-center lg:text-left">
                                     {CONTACT_EMAIL}
                                 </a>
                             </div>
                             <div className="group flex flex-col items-center lg:items-start w-full">
-                                <div className="text-[11px] font-bold uppercase tracking-widest text-ink/20 mb-3 flex items-center gap-2 group-hover:text-ink/40 transition-colors">
+                                <div className="text-[10px] font-black uppercase tracking-[0.2em] text-ink/20 mb-3 flex items-center gap-2 group-hover:text-ink/40 transition-colors">
                                     <MapPin className="w-4 h-4" strokeWidth={1.5} />
                                     {t('contact.location_label')}
                                 </div>
-                                <p className="h2 text-center lg:text-left">{t('contact.location')}</p>
+                                <p className="text-lg lg:text-xl font-bold font-display text-center lg:text-left">{t('contact.location')}</p>
                             </div>
                         </div>
                     </FadeIn>
 
                     <FadeIn delay={0.2}>
-                        <div className="mcard p-6 lg:p-12 shadow-2xl shadow-ink/5">
+                        <div className="mcard p-8 lg:p-14 shadow-2xl shadow-ink/5 bg-bg/50 backdrop-blur-sm relative">
+                            <div className="absolute inset-0 bg-gradient-to-br from-ink/[0.02] to-transparent pointer-events-none rounded-apple-xl" />
                             {isSuccess ? (
                                 <div className="text-center py-12 space-y-6">
                                     <div className="w-20 h-20 bg-emerald-500/10 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-8 animate-pulse">

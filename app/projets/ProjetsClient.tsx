@@ -29,7 +29,7 @@ export function ProjetsClient() {
     ];
 
     return (
-        <div className="pt-40 pb-32 px-6 lg:px-12">
+        <div className="pt-32 md:pt-40 pb-32 px-4 md:px-6 lg:px-12">
             <div className="max-w-7xl mx-auto">
                 <FadeIn>
                     <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-ink/40 mb-6 block">{t('portfolio.eyebrow')}</span>
@@ -38,7 +38,7 @@ export function ProjetsClient() {
                     </h1>
                 </FadeIn>
 
-                <div className="grid md:grid-cols-2 gap-x-16 gap-y-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-16 md:gap-y-24">
                     {(t('portfolio.projects', { returnObjects: true }) as any[]).map((project, i) => {
                         const projectData = {
                             ...project,
@@ -62,7 +62,7 @@ export function ProjetsClient() {
                 />
 
                 <FadeIn delay={0.5}>
-                    <div className="mt-40 p-16 lg:p-24 rounded-apple-xl bg-card border border-border text-center relative overflow-hidden group">
+                    <div className="mt-20 md:mt-40 p-8 md:p-16 lg:p-24 rounded-apple-xl bg-card border border-border text-center relative overflow-hidden group">
                         <div className="absolute inset-0 bg-ink opacity-0 group-hover:opacity-[0.02] transition-opacity duration-700" />
                         <h2 className="h2 mb-8 relative z-10">{t('portfolio.cta_similar')}</h2>
                         <div className="flex justify-center relative z-10">

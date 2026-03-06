@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Montserrat", sans-serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), sans-serif;
 
   --color-bg: var(--sec-a);
   --color-ink: var(--fg);
@@ -97,6 +97,7 @@
     @apply bg-bg text-ink antialiased selection:bg-ink selection:text-bg transition-colors duration-300;
     font-family: var(--font-sans);
     cursor: none;
+    overflow-x: hidden;
   }
 
   /* Grain Texture Overlay */
@@ -125,18 +126,18 @@
 }
 
 .display {
-  @apply font-display font-black leading-[0.85] tracking-[-0.08em];
-  font-size: clamp(40px, 8vw, 110px);
+  @apply font-display font-black tracking-[-0.08em] leading-[1.05];
+  font-size: clamp(32px, 7vw, 90px);
 }
 
 .h2 {
-  @apply font-display font-black leading-[0.9] tracking-[-0.06em];
-  font-size: clamp(32px, 6vw, 72px);
+  @apply font-display font-black tracking-[-0.06em] leading-[1.15];
+  font-size: clamp(28px, 5vw, 56px);
 }
 
 .lead {
-  @apply text-ink/60 leading-[1.75];
-  font-size: clamp(16px, 2vw, 20px);
+  @apply text-ink/60 leading-[1.6];
+  font-size: clamp(15px, 2vw, 19px);
 }
 
 .glass {

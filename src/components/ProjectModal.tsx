@@ -134,7 +134,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-6xl max-h-[90vh] bg-bg rounded-[32px] lg:rounded-[48px] overflow-hidden shadow-2xl flex flex-col lg:flex-row"
+            className="relative w-full max-w-6xl max-h-[90vh] bg-bg rounded-[32px] lg:rounded-[48px] overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-border/50"
           >
             {/* Close Button */}
             <button
@@ -147,7 +147,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
 
             {/* Image Section Wrapper */}
             <div
-              className="w-full lg:w-3/5 h-[40vh] lg:h-auto relative bg-card overflow-hidden group/container"
+              className="w-full lg:w-[55%] h-[40vh] lg:h-auto relative bg-card overflow-hidden group/container border-b lg:border-b-0 lg:border-r border-border/50"
               onClick={() => {
                 setShowControls(!showControls);
                 resetTimer();
@@ -234,71 +234,83 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
             </div>
 
             {/* Text Section */}
-            <div className="w-full lg:w-2/5 p-6 lg:p-16 overflow-y-auto bg-bg">
-              <div className="mb-12">
-                <span className="text-[10px] font-black uppercase tracking-[0.3em] text-ink/30 mb-4 block">
-                  {t('portfolio.modal.eyebrow', 'Étude de cas')}
-                </span>
-                <h2 className="display mb-6 text-left">
-                  {project.title}
-                </h2>
-                <p className="text-ink/40 text-sm font-bold uppercase tracking-widest">{project.sector}</p>
+            <div className="w-full lg:w-[45%] p-8 lg:p-16 overflow-y-auto bg-bg relative">
+              {/* Background Accents (matching Contact page) */}
+              <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
+                <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-ink/5 rounded-full blur-[80px] -mr-20 -mt-20" />
+                <div className="absolute bottom-0 left-0 w-[200px] h-[200px] bg-ink/5 rounded-full blur-[60px] -ml-10 -mb-10" />
               </div>
 
-              <div className="space-y-10">
-                <div>
-                  <h4 className="text-[11px] font-black uppercase tracking-[0.2em] text-ink/20 mb-4">
-                    {t('portfolio.modal.challenge', 'Le Défi')}
-                  </h4>
-                  <p className="text-ink/60 leading-relaxed">
-                    {project.description || `Accompagner ${project.title} dans une transition numérique majeure. L'objectif était de redéfinir les standards de leur secteur à travers une interface qui respire l'autorité et la précision.`}
-                  </p>
-                </div>
-
-                <div className="p-8 rounded-apple-lg bg-card border border-border">
-                  <h4 className="text-[11px] font-black uppercase tracking-[0.2em] text-ink/20 mb-4">
-                    {t('portfolio.modal.result_label', 'Résultat Clé')}
-                  </h4>
-                  <div className="h2 text-emerald-600 dark:text-emerald-400">
-                    {project.result}
+              <div className="relative z-10 scrollbar-hide">
+                <div className="mb-12">
+                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-ink/20 mb-6 block">
+                    {t('portfolio.modal.eyebrow', 'Étude de cas')}
+                  </span>
+                  <h2 className="text-3xl lg:text-5xl font-bold font-display tracking-tight text-ink mb-6 leading-[1.1]">
+                    {project.title}
+                  </h2>
+                  <div className="flex items-center gap-3">
+                    <div className="h-px w-8 bg-border" />
+                    <p className="text-ink/40 text-[10px] font-black uppercase tracking-widest leading-none">{project.sector}</p>
                   </div>
-                  <p className="text-ink/40 text-xs mt-2 font-medium">
-                    {t('portfolio.modal.result_sub', 'Mesuré sur les 6 premiers mois post-lancement.')}
-                  </p>
                 </div>
 
-                <div className="flex flex-col gap-4 pt-8">
-                  <Button
-                    variant="primary"
-                    size="lg"
-                    className="w-full group"
-                    onClick={() => {
-                      const msg = `Bonjour Lumina ! 👋 Je souhaite discuter du projet *${project.title}*.`;
-                      window.open(getWhatsAppLink(msg), '_blank');
-                    }}
-                  >
-                    {t('portfolio.modal.cta', 'Discuter de mon projet')}
-                    <MessageCircle className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
-                  </Button>
+                <div className="space-y-10">
+                  <div>
+                    <h4 className="text-[11px] font-black uppercase tracking-[0.2em] text-ink/20 mb-4">
+                      {t('portfolio.modal.challenge', 'Le Défi')}
+                    </h4>
+                    <p className="text-ink/60 leading-relaxed">
+                      {project.description || `Accompagner ${project.title} dans une transition numérique majeure. L'objectif était de redéfinir les standards de leur secteur à travers une interface qui respire l'autorité et la précision.`}
+                    </p>
+                  </div>
 
-                  {project.slug && (
+                  <div className="p-8 lg:p-10 rounded-apple-xl bg-card/30 backdrop-blur-sm border border-border/50 relative overflow-hidden group/result">
+                    <div className="absolute inset-0 bg-gradient-to-br from-ink/[0.02] to-transparent pointer-events-none" />
+                    <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-ink/20 mb-4 relative z-10">
+                      {t('portfolio.modal.result_label', 'Résultat Clé')}
+                    </h4>
+                    <div className="text-4xl lg:text-5xl font-bold font-display text-emerald-600 dark:text-emerald-400 relative z-10 tracking-tight">
+                      {project.result}
+                    </div>
+                    <p className="text-ink/40 text-[10px] mt-4 font-black uppercase tracking-widest relative z-10">
+                      {t('portfolio.modal.result_sub', 'Mesuré sur les 6 premiers mois post-lancement.')}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col gap-4 pt-8">
                     <Button
-                      variant="secondary"
+                      variant="primary"
                       size="lg"
                       className="w-full group"
                       onClick={() => {
-                        onClose();
-                        router.push(`/projets/${project.slug}`);
+                        const msg = `Bonjour Lumina ! 👋 Je souhaite discuter du projet *${project.title}*.`;
+                        window.open(getWhatsAppLink(msg), '_blank');
                       }}
                     >
-                      {t('portfolio.modal.read_more', "Lire l'histoire complète")}
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      {t('portfolio.modal.cta', 'Discuter de mon projet')}
+                      <MessageCircle className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
                     </Button>
-                  )}
 
-                  <Button variant="glass" size="lg" className="w-full group" onClick={onClose}>
-                    {t('portfolio.modal.close', 'Fermer')}
-                  </Button>
+                    {project.slug && (
+                      <Button
+                        variant="secondary"
+                        size="lg"
+                        className="w-full group"
+                        onClick={() => {
+                          onClose();
+                          router.push(`/projets/${project.slug}`);
+                        }}
+                      >
+                        {t('portfolio.modal.read_more', "Lire l'histoire complète")}
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    )}
+
+                    <Button variant="glass" size="lg" className="w-full group" onClick={onClose}>
+                      {t('portfolio.modal.close', 'Fermer')}
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>

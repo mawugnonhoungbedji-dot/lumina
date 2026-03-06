@@ -12,7 +12,7 @@ export function StudioClient() {
     const manifestoIcons = [Zap, Sparkles, Star, Shield];
 
     return (
-        <div className="pt-40 pb-32 px-6 lg:px-12">
+        <div className="pt-32 md:pt-40 pb-32 px-4 md:px-6 lg:px-12">
             <div className="max-w-7xl mx-auto">
                 <FadeIn>
                     <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-ink/40 mb-6 block">{t('studio_page.eyebrow')}</span>
@@ -21,23 +21,23 @@ export function StudioClient() {
                     </h1>
                 </FadeIn>
 
-                <div className="grid lg:grid-cols-2 gap-24 items-center mb-32">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center mb-32">
                     <FadeIn>
-                        <div className="aspect-[4/5] rounded-apple-xl overflow-hidden border border-border bg-card flex items-center justify-center p-12 lg:p-24 relative group">
+                        <div className="aspect-[4/5] rounded-apple-xl overflow-hidden border border-border bg-card flex items-center justify-center p-8 md:p-12 lg:p-24 relative group">
                             <div className="absolute inset-0 bg-gradient-to-br from-ink/[0.02] to-transparent" />
                             <div className="relative z-10 flex flex-col items-center gap-6">
-                                <span className="text-6xl lg:text-[120px] font-black font-display text-ink tracking-tighter select-none">Lumina.</span>
+                                <span className="text-4xl sm:text-6xl lg:text-[120px] font-black font-display text-ink tracking-tighter select-none">Lumina.</span>
                                 <div className="w-12 h-1 bg-ink/10 rounded-full group-hover:w-24 transition-all duration-700" />
                             </div>
-                            <div className="absolute top-12 left-12 w-2 h-2 rounded-full bg-ink/5" />
-                            <div className="absolute bottom-12 right-12 w-2 h-2 rounded-full bg-ink/5" />
+                            <div className="absolute top-8 left-8 w-2 h-2 rounded-full bg-ink/5" />
+                            <div className="absolute bottom-8 right-8 w-2 h-2 rounded-full bg-ink/5" />
                         </div>
                     </FadeIn>
                     <FadeIn delay={0.2}>
                         <h2 className="h2 mb-8">{t('studio_page.hero.title')}</h2>
                         <p className="text-lg text-ink/80 leading-relaxed mb-8">{t('studio_page.hero.p1')}</p>
                         <p className="text-ink/60 leading-relaxed mb-12">{t('studio_page.hero.p2')}</p>
-                        <div className="grid grid-cols-2 gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                             <div>
                                 <div className="flex items-center gap-3 mb-1">
                                     <Award className="w-6 h-6 text-ink/40" strokeWidth={1.5} />
@@ -57,9 +57,9 @@ export function StudioClient() {
                 </div>
 
                 <FadeIn delay={0.4}>
-                    <div className="p-12 lg:p-24 rounded-apple-xl bg-sec-b border border-border">
+                    <div className="p-6 md:p-12 lg:p-24 rounded-apple-xl bg-sec-b border border-border">
                         <h2 className="h2 mb-16 text-center">{t('studio_page.manifesto.title')}</h2>
-                        <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
                             {(t('studio_page.manifesto.items', { returnObjects: true }) as any[]).map((m, i) => {
                                 const Icon = manifestoIcons[i % manifestoIcons.length];
                                 return (
