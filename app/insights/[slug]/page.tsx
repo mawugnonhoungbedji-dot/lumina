@@ -17,13 +17,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: article.title,
-        description: article.content?.intro || `Lisez notre dernier article sur ${article.title}.`,
+        title: `${article.title} | Lumina Insights`,
+        description: article.content?.intro || `Lisez notre dernier article sur ${article.title} par les experts de Lumina.`,
         openGraph: {
             title: `${article.title} | Lumina Insights`,
             description: article.content?.intro,
             type: 'article',
             publishedTime: article.date,
+            url: `https://lumina.agency/insights/${slug}`,
         },
     };
 }

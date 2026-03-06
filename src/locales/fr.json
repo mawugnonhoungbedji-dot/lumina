@@ -13,8 +13,8 @@
     },
     "hero": {
         "eyebrow": "✦ Agence web · Cotonou & monde francophone · 100% satisfaction",
-        "title": "Votre site web devrait\nvous faire gagner des clients.",
-        "subtitle": "Lumina conçoit des sites web sur-mesure qui transforment vos visiteurs en clients. Pour les entrepreneurs et marques francophones qui refusent de ressembler à tout le monde.",
+        "title": "Agence Web : Lumina conçoit des sites qui vous font gagner des clients.",
+        "subtitle": "Nous créons des sites web sur-mesure au Bénin pour les entrepreneurs et marques francophones qui refusent de ressembler à tout le monde. Design premium, performance et SEO inclus.",
         "cta_primary": "Démarrer votre projet",
         "cta_secondary": "Nos réalisations",
         "stats": {
@@ -36,12 +36,12 @@
     },
     "approach": {
         "eyebrow": "02 — Notre approche",
-        "title": "La création de site web\nprofessionnel, réinventée.",
+        "title": "Agence Web & Stratégie Digitale :\nLa création réinventée.",
         "subtitle": "Pas de templates. Pas de solutions génériques. Chaque projet Lumina est conçu de zéro, pour un objectif précis : le vôtre.",
         "cards": [
             {
-                "title": "Design sur-mesure, orienté conversion",
-                "desc": "Un site web sur-mesure n'est pas un luxe — c'est un avantage concurrentiel. Chaque élément de design est pensé pour guider vos visiteurs vers l'action. On ne décore pas. On construit des machines à convaincre."
+                "title": "Design Web sur-mesure & UX",
+                "desc": "Un site web sur-mesure est votre plus grand avantage concurrentiel. Nous concevons chaque pixel pour guider vos visiteurs vers l'action. On ne décore pas. On construit des machines à convaincre."
             },
             {
                 "title": "Optimisé SEO dès la conception",
@@ -55,7 +55,7 @@
     },
     "portfolio": {
         "eyebrow": "03 — Réalisations",
-        "title": "Des sites web qui\nconvertissent vraiment.",
+        "title": "Agence Web Lumina :\nNos sites qui convertissent.",
         "cta": "Voir tous les projets",
         "cta_similar": "Vous avez un projet similaire ?",
         "modal": {
@@ -162,7 +162,7 @@
     },
     "studio": {
         "eyebrow": "05 — Le studio",
-        "title": "Une agence digitale premium,\nancrée au Bénin.",
+        "title": "Lumina : Agence digitale premium,\nancrée au Bénin (Cotonou).",
         "p1": "On a créé Lumina avec une conviction simple : les entreprises africaines et francophones méritent des sites web au niveau des meilleures agences internationales. Pas des adaptations au rabais.",
         "p2": "Pas des templates habillés. De la vraie création sur-mesure, avec la même exigence que les studios de Paris, Genève ou Montréal. 10 ans d'expérience. Une équipe qui connaît vos marchés. Un standard qui ne se négocie pas.",
         "btn": "Découvrir notre philosophie",

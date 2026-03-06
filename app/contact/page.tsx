@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import { ContactClient } from './ContactClient';
 
 export const metadata: Metadata = {
-    title: 'Contact | Lumina — Discutons de votre prochain projet Digital',
-    description: 'Vous avez une idée ambitieuse ? Contactez Lumina pour transformer votre vision en une expérience numérique exceptionnelle. Expertise en design et développement premium.',
-    keywords: ['contact agence web', 'devis site web', 'partenariat digital', 'lumina contact'],
+    title: 'Contact | Lumina — Lancez votre projet Web au Bénin',
+    description: 'Prêt à transformer votre présence digitale ? Contactez nos experts à Cotonou pour un site web d\'exception. Réponse sous 48h pour vos projets au Bénin et ailleurs.',
+    keywords: ['contact agence cotonou', 'devis création site web', 'agence web bénin contact', 'projet digital lumina'],
 };
 
 export default function Contact() {

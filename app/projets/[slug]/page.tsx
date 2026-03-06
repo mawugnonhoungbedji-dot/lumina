@@ -17,12 +17,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: project.title,
-        description: project.description || `Étude de cas détaillée du projet ${project.title} réalisé par Lumina.`,
+        title: `${project.title} | Étude de Cas Lumina`,
+        description: project.description || `Découvrez comment Lumina a transformé la présence digitale de ${project.title}.`,
         openGraph: {
-            title: `${project.title} | Lumina`,
+            title: `${project.title} | Étude de Cas Lumina`,
             description: project.description,
             images: [project.img || '/og-image.jpg'],
+            url: `https://lumina.agency/projets/${slug}`,
         },
     };
 }

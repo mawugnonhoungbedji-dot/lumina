@@ -67,7 +67,7 @@ export function StudioClient() {
                                         <div className="w-12 h-12 rounded-xl bg-ink/5 flex items-center justify-center mb-6">
                                             <Icon className="w-6 h-6 text-ink" strokeWidth={1.5} />
                                         </div>
-                                        <h4 className="text-xl font-bold font-display text-ink">{m.title}</h4>
+                                        <h3 className="text-xl font-bold font-display text-ink">{m.title}</h3>
                                         <p className="text-ink/60 leading-relaxed">{m.desc}</p>
                                     </div>
                                 );

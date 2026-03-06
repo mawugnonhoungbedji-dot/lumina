@@ -30,7 +30,7 @@ const FAQItem = ({ question, answer }: { question: string; answer: string;[key: 
                 onClick={() => setIsOpen(!isOpen)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-sec-b/50 transition-colors"
             >
-                <span className="font-bold text-ink">{question}</span>
+                <h3 className="font-bold text-ink text-left">{question}</h3>
                 <ChevronDown className={`w-5 h-5 text-ink/40 transition-transform duration-500 ${isOpen ? 'rotate-180' : ''}`} />
             </button>
             <motion.div

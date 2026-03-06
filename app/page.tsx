@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import { HomeClient } from './HomeClient';
 
 export const metadata: Metadata = {
-    title: 'Lumina | Agence Web Premium & Design Ultra-Premium',
-    description: 'Lumina est une agence web spécialisée dans la création de sites web ultra-premium, le design minimaliste et le développement de pointe pour les marques d\'exception.',
-    keywords: ['agence web premium', 'design ultra-premium', 'sites web luxe', 'développement next.js', 'lumina agency'],
+    title: 'Lumina | Agence Web Premium à Cotonou, Bénin — Design & SEO',
+    description: 'Lumina est une agence web d\'élite basée au Bénin, spécialisée dans la création de sites web sur-mesure, le design premium et l\'optimisation SEO pour les marques d\'exception.',
+    keywords: ['agence web cotonou', 'création site web bénin', 'design premium', 'seo bénin', 'lumina agency'],
 };
 
 export default function Home() {

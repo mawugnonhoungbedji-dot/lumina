@@ -73,7 +73,7 @@ export function ServicesClient() {
                                         <div>
                                             <div className="flex items-center gap-3 mb-1">
                                                 <span className="text-xs font-black font-display text-ink/20">{s.step}</span>
-                                                <h4 className="font-bold text-ink">{s.title}</h4>
+                                                <h3 className="font-bold text-ink">{s.title}</h3>
                                             </div>
                                             <p className="text-sm text-ink/40 leading-relaxed">{s.desc}</p>
                                         </div>
