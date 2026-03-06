@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { motion, HTMLMotionProps } from 'motion/react';
 import { cn } from '../lib/utils';
@@ -7,12 +9,12 @@ export interface ButtonProps extends HTMLMotionProps<'button'> {
   size?: 'sm' | 'md' | 'lg';
 }
 
-export const Button = ({ 
-  variant = 'primary', 
-  size = 'md', 
-  className, 
-  children, 
-  ...props 
+export const Button = ({
+  variant = 'primary',
+  size = 'md',
+  className,
+  children,
+  ...props
 }: ButtonProps) => {
   const variants = {
     primary: 'bg-ink text-bg hover:opacity-90',

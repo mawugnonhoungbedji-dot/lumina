@@ -37,5 +37,4 @@ git push -u origin main
 ## 4. Activer GitHub Pages
 
 1. Sur GitHub, allez dans **Settings** -> **Pages**.
-2. Dans la section **Build and deployment** -> **Source**, choisissez **GitHub Actions**.
-3. C'est tout ! Votre site sera compilé et déployé automatiquement sous quelques minutes.
+2. Dans la section **Build and deployment** -> **Source**.

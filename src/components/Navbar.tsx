@@ -1,15 +1,19 @@
+'use client';
+
 import { motion, useScroll, useSpring } from 'motion/react';
 import { Button } from './Button';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
+
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
-  const location = useLocation();
+  const pathname = usePathname();
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language?.startsWith('en') ? 'en' : 'fr';
 
@@ -44,12 +48,6 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Scroll to top on route change
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    setIsMobileMenuOpen(false);
-  }, [location]);
-
   const toggleTheme = (newTheme: 'light' | 'dark') => {
     setTheme(newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
@@ -72,7 +70,7 @@ export const Navbar = () => {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'py-4' : 'py-8'}`}>
         <div className="max-w-7xl mx-auto px-6">
           <div className={`flex items-center justify-between transition-all duration-500 rounded-full px-6 py-2 ${isScrolled ? 'glass shadow-lg' : ''}`}>
-            <Link to="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <span className="text-xl font-bold tracking-tighter font-display text-ink">Lumina.</span>
             </Link>
 
@@ -81,8 +79,8 @@ export const Navbar = () => {
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
-                  to={link.href}
-                  className={`text-sm font-medium transition-colors ${location.pathname === link.href ? 'text-ink' : 'text-ink/60 hover:text-ink'}`}
+                  href={link.href}
+                  className={`text-sm font-medium transition-colors ${pathname === link.href ? 'text-ink' : 'text-ink/60 hover:text-ink'}`}
                 >
                   {link.name}
                 </Link>
@@ -116,7 +114,7 @@ export const Navbar = () => {
                 </button>
               </div>
 
-              <Link to="/contact">
+              <Link href="/contact">
                 <Button size="sm">{t('nav.cta')}</Button>
               </Link>
             </div>
@@ -163,14 +161,14 @@ export const Navbar = () => {
             {navLinks.map((link) => (
               <Link
                 key={link.name}
-                to={link.href}
-                className={`text-lg font-medium ${location.pathname === link.href ? 'text-ink' : 'text-ink/60'}`}
+                href={link.href}
+                className={`text-lg font-medium ${pathname === link.href ? 'text-ink' : 'text-ink/60'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-            <Link to="/contact" className="w-full">
+            <Link href="/contact" className="w-full">
               <Button className="w-full">{t('nav.cta')}</Button>
             </Link>
           </motion.div>

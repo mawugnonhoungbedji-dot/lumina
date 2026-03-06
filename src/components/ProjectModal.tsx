@@ -1,10 +1,12 @@
+'use client';
+
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { X, ArrowRight, ExternalLink, MessageCircle } from 'lucide-react';
 import { Button } from './Button';
 import { useTranslation } from 'react-i18next';
-import { getWhatsAppLink } from '../lib/contact';
+import { getWhatsAppLink } from '@/src/lib/contact';
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -21,7 +23,7 @@ interface ProjectModalProps {
 
 export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project }) => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
+  const router = useRouter();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const [showControls, setShowControls] = useState(false);
@@ -237,7 +239,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
                 <span className="text-[10px] font-black uppercase tracking-[0.3em] text-ink/30 mb-4 block">
                   {t('portfolio.modal.eyebrow', 'Étude de cas')}
                 </span>
-                <h2 className="text-3xl lg:text-6xl font-black font-display text-ink mb-6 tracking-tighter leading-none">
+                <h2 className="display mb-6 text-left">
                   {project.title}
                 </h2>
                 <p className="text-ink/40 text-sm font-bold uppercase tracking-widest">{project.sector}</p>
@@ -257,7 +259,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
                   <h4 className="text-[11px] font-black uppercase tracking-[0.2em] text-ink/20 mb-4">
                     {t('portfolio.modal.result_label', 'Résultat Clé')}
                   </h4>
-                  <div className="text-3xl font-black text-emerald-600 dark:text-emerald-400 tracking-tight">
+                  <div className="h2 text-emerald-600 dark:text-emerald-400">
                     {project.result}
                   </div>
                   <p className="text-ink/40 text-xs mt-2 font-medium">
@@ -286,7 +288,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
                       className="w-full group"
                       onClick={() => {
                         onClose();
-                        navigate(`/projets/${project.slug}`);
+                        router.push(`/projets/${project.slug}`);
                       }}
                     >
                       {t('portfolio.modal.read_more', "Lire l'histoire complète")}
