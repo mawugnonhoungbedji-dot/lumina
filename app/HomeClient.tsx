@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
+import Image from 'next/image';
 import { Button } from '@/src/components/Button';
 import {
     ArrowRight,
@@ -253,14 +254,13 @@ export function HomeClient() {
                                 </div>
                                 <div className="flex items-center gap-5">
                                     <div className="relative">
-                                        <img
+                                        <Image
                                             src={["https://picsum.photos/seed/p1/100/100", "https://picsum.photos/seed/p2/100/100"][i]}
                                             alt={testimonial.author}
-                                            className="w-14 h-14 rounded-full border border-border grayscale group-hover:grayscale-0 transition-all duration-500"
-                                            referrerPolicy="no-referrer"
-                                            loading="lazy"
-                                            width="56"
-                                            height="56"
+                                            className="w-14 h-14 rounded-full border border-border grayscale group-hover:grayscale-0 transition-all duration-500 object-cover"
+                                            width={56}
+                                            height={56}
+                                            quality={80}
                                         />
                                         <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-emerald-500 rounded-full border-2 border-bg flex items-center justify-center">
                                             <div className="w-1.5 h-1.5 bg-white rounded-full" />

@@ -2,7 +2,9 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/src/components/Button';
+import Image from 'next/image';
 import { FadeIn } from '@/src/components/FadeIn';
+
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import { ArrowUpRight, Send } from 'lucide-react';
@@ -39,11 +41,13 @@ export function InsightsClient() {
                         <FadeIn key={i} delay={i * 0.1}>
                             <Link href={`/insights/${article.slug}`} className="group cursor-pointer block">
                                 <div className="aspect-[16/9] rounded-apple-lg overflow-hidden mb-8 border border-border">
-                                    <img
+                                    <Image
                                         src={articleImages[i % articleImages.length]}
                                         alt={article.title}
                                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                                        referrerPolicy="no-referrer"
+                                        width={800}
+                                        height={450}
+                                        priority={i < 2}
                                     />
                                 </div>
                                 <div className="flex items-center gap-4 mb-4">

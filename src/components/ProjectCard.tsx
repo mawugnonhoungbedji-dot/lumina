@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -27,16 +28,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, sector, result,
     >
       {/* The "Box" / Frame */}
       <div className="relative aspect-[16/11] rounded-[48px] overflow-hidden bg-card border border-border group-hover:shadow-3xl group-hover:shadow-ink/10 transition-all duration-700">
-        <img
+        <Image
           src={img}
           alt={title}
           className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
-          referrerPolicy="no-referrer"
-          loading={priority ? "eager" : "lazy"}
-          width="800"
-          height="550"
+          priority={priority}
+          width={800}
+          height={550}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-          {...(priority ? { "fetchPriority": "high" } as any : {})}
         />
 
         {/* Bottom Right "Form" / Cut-out style */}

@@ -50,6 +50,7 @@ export function ProjetsClient() {
                                 {...projectData}
                                 delay={i * 0.1}
                                 onClick={() => openProject(projectData)}
+                                priority={i < 2}
                             />
                         );
                     })}
