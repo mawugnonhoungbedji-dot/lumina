@@ -75,10 +75,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             </p>
 
                             <div className="flex gap-8 text-[12px] font-bold uppercase tracking-widest text-ink/40">
-                                <Link href="/mentions-legales" className="hover:text-ink transition-colors">
+                                <Link href="/mentions-legales/" className="hover:text-ink transition-colors">
                                     Mentions légales
                                 </Link>
-                                <Link href="/politique-de-confidentialite" className="hover:text-ink transition-colors">
+                                <Link href="/politique-de-confidentialite/" className="hover:text-ink transition-colors">
                                     Confidentialité
                                 </Link>
                             </div>

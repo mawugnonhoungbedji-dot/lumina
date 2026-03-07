@@ -49,13 +49,13 @@ export function HeroSection() {
 
                 <FadeIn instant>
                     <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6">
-                        <Link href="/contact">
+                        <Link href="/contact/">
                             <Button size="lg" className="px-10 lg:px-12 py-7 text-lg shadow-2xl shadow-ink/10 group w-full lg:w-auto" aria-label={t('hero.cta_primary')}>
                                 {t('hero.cta_primary')}
                                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
-                        <Link href="/projets" className="w-full lg:w-auto">
+                        <Link href="/projets/" className="w-full lg:w-auto">
                             <Button variant="glass" size="lg" className="group px-10 py-7 text-lg w-full" aria-label={t('hero.cta_secondary')}>
                                 {t('hero.cta_secondary')}
                                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

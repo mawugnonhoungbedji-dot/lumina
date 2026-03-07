@@ -35,7 +35,7 @@ export function CaseStudyClient() {
         const currentProject = allProjects.find(p => p.slug === slug);
 
         if (!currentProject) {
-            router.push('/projets');
+            router.push('/projets/');
             return;
         }
 
@@ -64,7 +64,7 @@ export function CaseStudyClient() {
                     className="mb-16 flex items-center justify-between"
                 >
                     <Link
-                        href="/projets"
+                        href="/projets/"
                         className="group flex items-center gap-3 text-ink/40 hover:text-ink transition-colors text-sm font-black uppercase tracking-widest"
                     >
                         <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center group-hover:scale-110 group-hover:bg-ink group-hover:text-bg transition-all duration-500">
@@ -138,7 +138,7 @@ export function CaseStudyClient() {
                                 </h3>
                                 <p className="text-xl text-ink/60 leading-relaxed font-medium">
                                     {project.context || project.description || "Un défi d'excellence numérique pour redéfinir les standards du secteur."}
-                                    {" "}Découvrez comment notre <Link href="/services" className="text-ink font-bold border-b border-ink/20 hover:border-ink transition-colors">expertise sur-mesure</Link> peut s'adapter à vos besoins.
+                                    {" "}Découvrez comment notre <Link href="/services/" className="text-ink font-bold border-b border-ink/20 hover:border-ink transition-colors">expertise sur-mesure</Link> peut s'adapter à vos besoins.
                                 </p>
                             </div>
 
@@ -192,7 +192,7 @@ export function CaseStudyClient() {
                                 <Button
                                     variant="primary"
                                     className="w-full justify-center bg-bg text-ink hover:bg-emerald-500 hover:text-white border-none shadow-xl"
-                                    onClick={() => router.push('/contact')}
+                                    onClick={() => router.push('/contact/')}
                                 >
                                     {t('casestudy.cta.btn')}
                                 </Button>
@@ -212,7 +212,7 @@ export function CaseStudyClient() {
                         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-ink/20 mb-8 block">
                             {t('casestudy.next')}
                         </span>
-                        <Link href={`/projets/${nextProject.slug}`} className="group inline-block">
+                        <Link href={`/projets/${nextProject.slug}/`} className="group inline-block">
                             <h2 className="display mb-12 group-hover:scale-95 transition-transform duration-700">
                                 {nextProject.title}
                             </h2>

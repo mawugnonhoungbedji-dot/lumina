@@ -19,7 +19,7 @@ export function ArticleClient() {
 
     useEffect(() => {
         if (!article) {
-            router.push('/insights');
+            router.push('/insights/');
         }
     }, [article, router]);
 
@@ -30,7 +30,7 @@ export function ArticleClient() {
             <div className="max-w-4xl mx-auto">
                 <FadeIn>
                     <Link
-                        href="/insights"
+                        href="/insights/"
                         className="inline-flex items-center gap-2 text-ink/40 hover:text-ink transition-colors mb-12 group"
                     >
                         <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
@@ -105,10 +105,10 @@ export function ArticleClient() {
                                     <div className="absolute inset-0 bg-ink opacity-0 group-hover:opacity-[0.01] transition-opacity duration-700" />
                                     <h3 className="h2 mb-4">{t('portfolio.cta_similar')}</h3>
                                     <p className="text-ink/60 mb-8 max-w-lg mx-auto">
-                                        Découvrez comment notre <Link href="/services" className="text-ink font-bold border-b border-ink/20 hover:border-ink transition-colors">expertise en stratégie et design</Link> peut propulser votre business.
+                                        Découvrez comment notre <Link href="/services/" className="text-ink font-bold border-b border-ink/20 hover:border-ink transition-colors">expertise en stratégie et design</Link> peut propulser votre business.
                                     </p>
                                     <div className="flex justify-center">
-                                        <Link href="/contact">
+                                        <Link href="/contact/">
                                             <Button size="lg" className="px-12 group">
                                                 {t('nav.cta')}
                                                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

@@ -25,13 +25,13 @@ export function CTAFinalSection() {
                     </h2>
                     <p className="text-ink/60 max-w-xl mx-auto text-[14px] lg:text-[17px] mb-11 font-medium">{t('cta_final.subtitle')}</p>
                     <div className="flex flex-wrap items-center justify-center gap-6">
-                        <Link href="/contact">
+                        <Link href="/contact/">
                             <Button size="lg" className="px-10 group" aria-label={t('cta_final.btn_primary')}>
                                 {t('cta_final.btn_primary')}
                                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
-                        <Link href="/projets">
+                        <Link href="/projets/">
                             <Button variant="glass" size="lg" className="px-10 group" aria-label={t('cta_final.btn_secondary')}>
                                 {t('cta_final.btn_secondary')}
                                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

@@ -55,10 +55,10 @@ export const Navbar = () => {
   };
 
   const navLinks = [
-    { name: t('nav.projets'), href: '/projets' },
-    { name: t('nav.services'), href: '/services' },
-    { name: t('nav.studio'), href: '/studio' },
-    { name: t('nav.insights'), href: '/insights' },
+    { name: t('nav.projets'), href: '/projets/' },
+    { name: t('nav.services'), href: '/services/' },
+    { name: t('nav.studio'), href: '/studio/' },
+    { name: t('nav.insights'), href: '/insights/' },
   ];
 
   return (
@@ -114,7 +114,7 @@ export const Navbar = () => {
                 </button>
               </div>
 
-              <Link href="/contact">
+              <Link href="/contact/">
                 <Button size="sm">{t('nav.cta')}</Button>
               </Link>
             </div>
@@ -168,7 +168,7 @@ export const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Link href="/contact" className="w-full">
+            <Link href="/contact/" className="w-full">
               <Button className="w-full">{t('nav.cta')}</Button>
             </Link>
           </motion.div>
