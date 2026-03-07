@@ -73,12 +73,12 @@ export function HeroSection() {
                     ].map((stat, i) => {
                         const Icon = statIcons[i];
                         return (
-                            <FadeIn key={i} delay={0.6 + i * 0.1} className="bg-bg p-8 lg:p-14 transition-colors hover:bg-sec-b/50 group flex flex-col items-center lg:items-start">
+                            <FadeIn key={i} delay={0.6 + i * 0.1} className="bg-bg p-8 lg:p-14 transition-colors hover:bg-sec-b/50 group flex flex-col items-center">
                                 <div className="flex items-center gap-4 mb-4">
                                     <Icon className="w-6 h-6 text-ink/20 group-hover:text-ink/40 transition-colors" strokeWidth={1.5} />
-                                    <h4 className="text-4xl lg:text-5xl font-black font-display text-ink tracking-tighter group-hover:scale-105 transition-transform duration-500 origin-left">{stat.value}</h4>
+                                    <h4 className="text-4xl lg:text-5xl font-black font-display text-ink tracking-tighter group-hover:scale-105 transition-transform duration-500 origin-center">{stat.value}</h4>
                                 </div>
-                                <p className="text-[10px] lg:text-[12px] font-bold text-ink/30 uppercase tracking-[0.2em] text-center lg:text-left">{stat.label}</p>
+                                <p className="text-[10px] lg:text-[12px] font-bold text-ink/30 uppercase tracking-[0.2em] text-center">{stat.label}</p>
                             </FadeIn>
                         );
                     })}
