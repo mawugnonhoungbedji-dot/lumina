@@ -2,6 +2,12 @@ import { Metadata } from 'next';
 import { CaseStudyClient } from './CaseStudyClient';
 import fr from '@/src/locales/fr.json';
 
+export async function generateStaticParams() {
+    return fr.portfolio.projects.map((project: any) => ({
+        slug: project.slug,
+    }));
+}
+
 type Props = {
     params: Promise<{ slug: string }>;
 };

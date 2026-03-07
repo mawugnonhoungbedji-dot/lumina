@@ -2,6 +2,12 @@ import { Metadata } from 'next';
 import { ArticleClient } from '../ArticleClient';
 import fr from '@/src/locales/fr.json';
 
+export async function generateStaticParams() {
+    return fr.insights_page.articles.map((article: any) => ({
+        slug: article.slug,
+    }));
+}
+
 type Props = {
     params: Promise<{ slug: string }>;
 };
