@@ -24,11 +24,47 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: article.content?.intro,
             type: 'article',
             publishedTime: article.date,
-            url: `https://lumina.agency/insights/${slug}`,
+            url: `https://lumina-agency.netlify.app/insights/${slug}`,
         },
     };
 }
 
-export default function Article() {
-    return <ArticleClient />;
+export default async function Article({ params }: Props) {
+    const { slug } = await params;
+    const article = fr.insights_page.articles.find((a) => a.slug === slug);
+
+    if (!article) {
+        return <ArticleClient />;
+    }
+
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: article.title,
+        description: article.content?.intro,
+        author: {
+            '@type': 'Organization',
+            name: 'Lumina',
+        },
+        publisher: {
+            '@type': 'Organization',
+            name: 'Lumina',
+            logo: {
+                '@type': 'ImageObject',
+                url: 'https://lumina-agency.netlify.app/og-image.jpg',
+            },
+        },
+        datePublished: article.date,
+        url: `https://lumina-agency.netlify.app/insights/${slug}`,
+    };
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+            <ArticleClient />
+        </>
+    );
 }

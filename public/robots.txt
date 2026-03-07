@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
+
+Sitemap: https://lumina-agency.netlify.app/sitemap.xml

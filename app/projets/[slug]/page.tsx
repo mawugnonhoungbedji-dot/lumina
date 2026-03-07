@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title: `${project.title} | Étude de Cas Lumina`,
             description: project.description,
             images: [project.img || '/og-image.jpg'],
-            url: `https://lumina.agency/projets/${slug}`,
+            url: `https://lumina-agency.netlify.app/projets/${slug}`,
         },
     };
 }

@@ -138,6 +138,7 @@ export function CaseStudyClient() {
                                 </h3>
                                 <p className="text-xl text-ink/60 leading-relaxed font-medium">
                                     {project.context || project.description || "Un défi d'excellence numérique pour redéfinir les standards du secteur."}
+                                    {" "}Découvrez comment notre <Link href="/services" className="text-ink font-bold border-b border-ink/20 hover:border-ink transition-colors">expertise sur-mesure</Link> peut s'adapter à vos besoins.
                                 </p>
                             </div>
 

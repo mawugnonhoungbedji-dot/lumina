@@ -31,7 +31,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, sector, result,
         <Image
           src={img}
           alt={title}
-          className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
+          className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition duration-1000"
           priority={priority}
           width={800}
           height={550}
@@ -50,7 +50,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, sector, result,
 
           <button
             onClick={onClick}
-            className="w-12 h-12 lg:w-16 lg:h-16 bg-ink text-bg rounded-full flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-xl relative z-30 cursor-pointer"
+            className="w-12 h-12 lg:w-16 lg:h-16 bg-ink text-bg rounded-full flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition duration-500 shadow-xl relative z-30 cursor-pointer"
             aria-label={`Voir le projet ${title}`}
           >
             <ArrowUpRight size={24} className="lg:w-7 lg:h-7" strokeWidth={2.5} />
@@ -74,7 +74,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, sector, result,
           <h4 className="h2 group-hover:translate-x-3 transition-transform duration-500">{title}</h4>
           <p className="text-ink/40 text-sm font-medium mt-1">{sector}</p>
         </div>
-        <div className="h-px flex-grow mx-10 bg-border opacity-0 group-hover:opacity-100 transition-all duration-700 scale-x-0 group-hover:scale-x-100 origin-left" />
+        <div className="h-px flex-grow mx-10 bg-border opacity-0 group-hover:opacity-100 transition-opacity duration-700 relative overflow-hidden">
+          <div className="absolute inset-0 bg-ink origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
+        </div>
         <div className="text-right">
           <span className="text-[10px] font-black text-ink/20 uppercase tracking-[0.3em] group-hover:text-ink/60 transition-colors">Explorer</span>
         </div>

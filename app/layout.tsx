@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://lumina.agency'),
+    metadataBase: new URL('https://lumina-agency.netlify.app'),
     title: {
         template: '%s | Lumina — Agence Créative Premium',
         default: 'Lumina — Design, Développement & Stratégie Digitale',
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'fr_FR',
-        url: 'https://lumina.agency',
+        url: 'https://lumina-agency.netlify.app',
         siteName: 'Lumina',
         title: 'Lumina — Agence Créative Premium',
         description: 'Expériences numériques d’exception pour marques ambitieuses.',
         images: [
             {
-                url: '/og-image.jpg',
+                url: 'https://lumina-agency.netlify.app/og-image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Lumina Agence Créative',
@@ -70,20 +70,54 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 </span>
                             </Link>
 
-                            <p className="text-[12px] font-medium text-ink/40">
-                                © {new Date().getFullYear()} Lumina. Tous droits réservés.
+                            <p className="text-[12px] font-medium text-ink/40 text-center">
+                                © {new Date().getFullYear()} Lumina. Tous droits réservés. Agence créative à Cotonou & International.
                             </p>
 
                             <div className="flex gap-8 text-[12px] font-bold uppercase tracking-widest text-ink/40">
-                                <Link href="/contact" className="hover:text-ink transition-colors">
+                                <Link href="/mentions-legales" className="hover:text-ink transition-colors">
                                     Mentions légales
                                 </Link>
-                                <Link href="/contact" className="hover:text-ink transition-colors">
+                                <Link href="/politique-de-confidentialite" className="hover:text-ink transition-colors">
                                     Confidentialité
                                 </Link>
                             </div>
                         </div>
                     </footer>
+
+                    {/* Structured Data */}
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify({
+                                '@context': 'https://schema.org',
+                                '@type': 'ProfessionalService',
+                                name: 'Lumina',
+                                image: 'https://lumina-agency.netlify.app/og-image.jpg',
+                                '@id': 'https://lumina-agency.netlify.app',
+                                url: 'https://lumina-agency.netlify.app',
+                                telephone: '',
+                                address: {
+                                    '@type': 'PostalAddress',
+                                    streetAddress: '',
+                                    addressLocality: 'Cotonou',
+                                    addressCountry: 'BJ',
+                                },
+                                geo: {
+                                    '@type': 'GeoCoordinates',
+                                    latitude: 6.3654,
+                                    longitude: 2.4183,
+                                },
+                                openingHoursSpecification: {
+                                    '@type': 'OpeningHoursSpecification',
+                                    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                                    opens: '09:00',
+                                    closes: '18:00',
+                                },
+                                sameAs: [],
+                            }),
+                        }}
+                    />
                 </Providers>
             </body>
         </html>

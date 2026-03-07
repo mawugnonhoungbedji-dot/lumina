@@ -103,7 +103,10 @@ export function ArticleClient() {
                                 </p>
                                 <div className="bg-card border border-border rounded-apple-xl p-12 lg:p-20 text-center relative overflow-hidden group">
                                     <div className="absolute inset-0 bg-ink opacity-0 group-hover:opacity-[0.01] transition-opacity duration-700" />
-                                    <h3 className="h2 mb-8">{t('portfolio.cta_similar')}</h3>
+                                    <h3 className="h2 mb-4">{t('portfolio.cta_similar')}</h3>
+                                    <p className="text-ink/60 mb-8 max-w-lg mx-auto">
+                                        Découvrez comment notre <Link href="/services" className="text-ink font-bold border-b border-ink/20 hover:border-ink transition-colors">expertise en stratégie et design</Link> peut propulser votre business.
+                                    </p>
                                     <div className="flex justify-center">
                                         <Link href="/contact">
                                             <Button size="lg" className="px-12 group">

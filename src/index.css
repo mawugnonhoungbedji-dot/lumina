@@ -147,7 +147,7 @@
 }
 
 .mcard {
-  @apply bg-card border border-border rounded-apple-lg p-8 lg:p-11 transition-all duration-500 relative overflow-hidden;
+  @apply bg-card border border-border rounded-apple-lg p-8 lg:p-11 transition shadow-sm duration-500 relative overflow-hidden;
 }
 
 .mcard:hover {
@@ -176,16 +176,19 @@
   @apply fixed top-0 left-0 z-[9999] w-1.5 h-1.5 rounded-full pointer-events-none;
   background: var(--cursor);
   transform: translate(-50%, -50%);
+  will-change: transform;
 }
 
 .cursor-ring {
   @apply fixed top-0 left-0 z-[9998] w-10 h-10 rounded-full pointer-events-none;
   border: 1px solid var(--cursor-20);
   transform: translate(-50%, -50%);
+  transition: transform 0.3s cubic-bezier(0.21, 0.47, 0.32, 0.98), border-color 0.3s ease;
+  will-change: transform;
 }
 
 .hov .cursor-ring {
-  @apply w-12 h-12;
+  transform: translate(-50%, -50%) scale(1.2);
   border-color: var(--cursor-55);
 }
 
